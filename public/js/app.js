@@ -24,9 +24,8 @@ weatherForm.addEventListener('submit', (e) => { // e = event
                 messageOne.textContent = ''
                 return messageTwo.textContent = data.error
             }
-            console.log(data.forecast)
             messageOne.textContent = ''
-            messageTwo.textContent = `It is ${data.forecast.temperature}F degrees now in ${location}`
+            messageTwo.textContent = data.forecast
         })
     })
 })
